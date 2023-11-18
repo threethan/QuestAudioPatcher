@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name" translatable="false">Quest Audio Patcher</string>
+    <string name="about_summary">This patcher is heavily based on APK Explorer &amp; Editor (AEE), which is used &amp; licenced under GPLv3</string>
+    <string name="share_summary">APK Explorer &amp; Editor (AEE) %s can be obtained from GitHub: https://github.com/apk-editor/APK-Explorer-Editor/releases</string>
+    <string name="warning_message">This patcher will only fix background audio on apps, only on Meta Quest Devices. Please check that your app works on Quest before blaming the patcher! Some apps may still not work.\n
+        \nFollow all prompts and check the \'about\' section for full instructions. \nWARNING: Patched apps\' data may be removed!
+        \n\nThis patcher is based heavily on APK Editor and Explorer, but please do not bother it\'s developers about issues with this patcher.</string>
+
+    <string name="instruction_title">Instructions</string>
+    <string name="instruction_content">1. Select the app you wish to modify from the "Apps" list\n\n
+    2. Wait for the app to be automatically be patched. This has a few steps and may take a while for larger apps.\n\n
+    3. Uninstall the original app when prompted. WARNING: That app\'s current data may be permanently lost!\n\n
+    4. If you are asked to let the patcher install unknown apps, go to settings and allow it. Then press back to return.\n\n
+    5. Install the modified application as prompted!
+        \n\n\nUse common sense and only patch applications which would benefit from background audio.
+        \n\nIf you have any issues with this patcher, please leave them ONLY at github.com/threethan/QuestAudioPatcher.
+    </string>
+    <string name="already_patched">This package has already been patched or already has required permissions!</string>
+    <string name="in_progress">Modifying files…</string>
+
+    <string name="install_help">If you failed to install now, you can cancel and try again from the APKs tab</string>
+    <string name="wait_help">This process might take a while, especially on more complex applications.</string>
+</resources>

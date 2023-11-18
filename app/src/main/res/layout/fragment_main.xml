@@ -1,0 +1,87 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_vertical"
+        android:background="@color/colorBlack"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorAccent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="80dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="start" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/search_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="?attr/colorAccent"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="50dp"
+                android:hint="@string/search"
+                android:visibility="gone"
+                android:gravity="center"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/search_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            android:src="@drawable/ic_search"
+            android:tint="?attr/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/sort_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_sort"
+            android:tint="?attr/colorAccent" />
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        app:tabSelectedTextColor="?attr/colorAccent"
+        app:tabTextColor="@color/colorWhite"
+        android:visibility="gone"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+    <include layout="@layout/progress_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

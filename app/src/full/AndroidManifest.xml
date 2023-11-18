@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <application>
+        <activity android:name="com.threethan.questpatcher.activities.APKInstallerActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="@string/split_apk_installer"
+            tools:ignore="AppLinkUrlError"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.android.package-archive" />
+                <data android:mimeType="application/xapk-package-archive" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/vnd.apkm" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.threethan.questpatcher.activities.APKSignActivity"
+            android:exported="false" />
+
+        <activity android:name="com.threethan.questpatcher.activities.FilePickerActivity"
+            android:exported="false" />
+
+        <activity android:name="com.threethan.questpatcher.activities.InstallerActivity"
+            android:exported="false" />
+
+        <activity android:name="com.threethan.questpatcher.activities.InstallerFilePickerActivity"
+            android:exported="false" />
+
+        <activity android:name="com.threethan.questpatcher.activities.TextEditorActivity"
+            android:exported="false" />
+
+        <service android:name="com.threethan.questpatcher.services.InstallerService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.threethan.questpatcher.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+</manifest>
