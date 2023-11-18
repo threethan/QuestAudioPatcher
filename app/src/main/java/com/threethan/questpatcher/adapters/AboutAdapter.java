@@ -27,7 +27,7 @@ import in.sunilpaulmathew.sCommon.CommonUtils.sCommonUtils;
 import in.sunilpaulmathew.sCommon.CommonUtils.sSerializableItems;
 import in.sunilpaulmathew.sCommon.Credits.sCreditsUtils;
 import in.sunilpaulmathew.sCommon.ThemeUtils.sThemeUtils;
-import in.sunilpaulmathew.sCommon.TranslatorUtils.sTranslatorUtils;""
+import in.sunilpaulmathew.sCommon.TranslatorUtils.sTranslatorUtils;
 
 /*
  * Created by APK Explorer & Editor <apkeditor@protonmail.com> on March 04, 2021
