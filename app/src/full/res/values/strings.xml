@@ -16,6 +16,7 @@
         \n\nIf you have any issues with this patcher, please leave them ONLY at github.com/threethan/QuestAudioPatcher.
     </string>
     <string name="already_patched">This package has already been patched or already has required permissions!</string>
+    <string name="no_manifest">Failed to find AndroidManifest.xml, try clearing app data</string>
     <string name="in_progress">Modifying files…</string>
 
     <string name="install_help">If you failed to install now, you can cancel and try again from the APKs tab</string>

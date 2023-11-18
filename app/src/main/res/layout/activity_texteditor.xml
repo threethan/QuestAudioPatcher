@@ -48,12 +48,12 @@
             android:src="@drawable/ic_save"
             android:tint="?attr/colorAccent"
             android:visibility="gone" />
+
     </FrameLayout>
 
     <include layout="@layout/progress_layout" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
@@ -63,13 +63,14 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         app:cardCornerRadius="5dp"
-        app:strokeWidth="0.1dp" >
+        app:strokeWidth="0.1dp">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp" >
+            android:layout_margin="10dp">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/text"

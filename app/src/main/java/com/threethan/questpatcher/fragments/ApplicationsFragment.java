@@ -99,17 +99,6 @@ public class ApplicationsFragment extends Fragment {
         return mRootView;
     }
 
-    private int getTabPosition(Activity activity) {
-        String mStatus = sCommonUtils.getString("appTypes", "all", activity);
-        if (mStatus.equals("user")) {
-            return 2;
-        } else if (mStatus.equals("system")) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
-
     private void loadApps(Activity activity) {
         new sExecutor() {
 

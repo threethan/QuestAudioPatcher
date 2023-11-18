@@ -77,10 +77,7 @@ public class InstallerActivity extends AppCompatActivity {
             }
         });
 
-        mCancel.setOnClickListener(v -> onBackPressed());
-
-
-        findViewById(R.id.cancelInstall).setOnClickListener((v) -> {
+        mCancel.setOnClickListener(v -> {
             if (sFileUtils.exist(new File(getCacheDir(),"splits"))) {
                 sFileUtils.delete(new File(getCacheDir(),"splits"));
             }

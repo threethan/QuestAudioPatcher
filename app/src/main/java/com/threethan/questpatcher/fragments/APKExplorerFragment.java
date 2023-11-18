@@ -68,6 +68,16 @@ public class APKExplorerFragment extends androidx.fragment.app.Fragment {
         alertDialog.setMessage(getString(R.string.already_patched));
         alertDialog.show();
     }
+    public void failManifest() {
+        AlertDialog alertDialog =  new MaterialAlertDialogBuilder(getActivity())
+                .setNegativeButton(R.string.cancel, (DialogInterface.OnClickListener) (d, w) -> {
+                    getActivity().finish();
+                    d.dismiss();
+                }).create();
+        alertDialog.setTitle(R.string.cancelling);
+        alertDialog.setMessage(getString(R.string.no_manifest));
+        alertDialog.show();
+    }
     public void succeed() {
         saveBtn.callOnClick();
     }
@@ -107,11 +117,17 @@ public class APKExplorerFragment extends androidx.fragment.app.Fragment {
         // CHANGED: AUTOMATE
         current = this;
         Intent amintent;
+        boolean hasOpened = false;
         amintent = new Intent(requireActivity(), TextEditorActivity.class);
         for (String file : APKExplorer.getData(getFilesList(), true, requireActivity())) {
-            if (file.contains("AndroidManifest")) amintent.putExtra(TextEditorActivity.PATH_INTENT, file);
+            if (file != null && file.endsWith("AndroidManifest.xml")) {
+                amintent.putExtra(TextEditorActivity.PATH_INTENT, file);
+                startActivity(amintent);
+                hasOpened = true;
+                break;
+            }
         }
-        startActivity(amintent);
+        if (!hasOpened) failManifest();
 
         mSortButton.setOnClickListener(v -> {
             PopupMenu popupMenu = new PopupMenu(requireActivity(), mSortButton);

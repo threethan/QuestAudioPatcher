@@ -60,6 +60,12 @@ public class ExploreAPK extends sExecutor {
         Common.setAppID(mPackageName != null ? mPackageName : mAPKFile.getName());
         mExplorePath = new File(mContext.getCacheDir().getPath(), mPackageName != null ? mPackageName : mAPKFile.getName());
         mBackUpPath = new File(mExplorePath, ".aeeBackup");
+
+        // Bypass backup/cache
+        sFileUtils.delete(mExplorePath);
+        sFileUtils.delete(mBackUpPath);
+
+
         Common.setPath(mExplorePath.getAbsolutePath());
         if (!mExplorePath.exists()) {
             Common.setFinishStatus(false);
@@ -105,8 +111,7 @@ public class ExploreAPK extends sExecutor {
             } catch (JSONException ignored) {
             }
             APKEditorUtils.unzip(mPackageName != null ? sPackageUtils.getSourceDir(mPackageName, mContext) : mAPKFile.getAbsolutePath(), mExplorePath.getAbsolutePath());
-            // Decompile dex file(s)
-            //TODO: Reenable
+            // (Don't) Decompile dex file(s)
 //            for (File files : Objects.requireNonNull(mExplorePath.listFiles())) {
 //                if (files.getName().startsWith("classes") && files.getName().endsWith(".dex") && !Common.isCancelled()) {
 //                    sFileUtils.mkdir(mBackUpPath);

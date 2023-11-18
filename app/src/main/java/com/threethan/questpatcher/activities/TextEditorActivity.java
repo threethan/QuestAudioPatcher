@@ -77,7 +77,9 @@ public class TextEditorActivity extends AppCompatActivity {
 
         mText.setTextColor(sThemeUtils.isDarkTheme(this) ? Color.WHITE : Color.BLACK);
 
-        mTitle.setText(new File(mPath).getName());
+        if (mPath != null) {
+            mTitle.setText(new File(mPath).getName());
+        }
 
         new sExecutor() {
             private boolean invalid = false;

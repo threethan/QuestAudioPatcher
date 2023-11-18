@@ -72,11 +72,6 @@ public class ApplicationsAdapter extends RecyclerView.Adapter<ApplicationsAdapte
             holder.mVersion.setText(holder.mAppName.getContext().getString(R.string.version, data.get(position).getAppVersion()));
             holder.mVersion.setTextColor(Color.RED);
             holder.mSize.setTextColor(sThemeUtils.isDarkTheme(holder.mSize.getContext()) ? Color.GREEN : Color.BLACK);
-            holder.mAppIcon.setOnClickListener(v -> {
-                Common.setAppID(data.get(position).getPackageName());
-                Intent imageView = new Intent(v.getContext(), ImageViewActivity.class);
-                v.getContext().startActivity(imageView);
-            });
             holder.mCard.setCardBackgroundColor(sThemeUtils.isDarkTheme(holder.mCard.getContext()) ? Color.DKGRAY : Color.LTGRAY);
             holder.mCard.setStrokeColor(sThemeUtils.isDarkTheme(holder.mCard.getContext()) ? Color.DKGRAY : Color.LTGRAY);
             holder.mSize.setVisibility(View.VISIBLE);

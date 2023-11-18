@@ -71,6 +71,13 @@
                     android:clickable="false"
                     android:textStyle="italic"
                     android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:gravity="center"
+                    android:text="@string/wait_help" />
         </FrameLayout>
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -112,10 +119,4 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20sp"
-            android:gravity="center"
-            android:text="@string/wait_help" />
 </androidx.appcompat.widget.LinearLayoutCompat>
