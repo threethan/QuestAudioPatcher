@@ -2,7 +2,7 @@ package com.threethan.questpatcher.utils.dialogs;
 
 import android.app.Activity;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.tasks.ExportApp;
 import com.threethan.questpatcher.utils.tasks.ResignAPKs;
 

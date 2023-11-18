@@ -6,7 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.InstallerActivity;
 import com.threethan.questpatcher.activities.InstallerFilePickerActivity;
 import com.threethan.questpatcher.services.InstallerService;

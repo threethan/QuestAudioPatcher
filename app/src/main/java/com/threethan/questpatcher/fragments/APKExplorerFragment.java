@@ -23,7 +23,7 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.TextEditorActivity;
 import com.threethan.questpatcher.adapters.APKExplorerAdapter;
 import com.threethan.questpatcher.utils.APKEditorUtils;

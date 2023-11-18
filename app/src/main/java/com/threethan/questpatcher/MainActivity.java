@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.viewpager.widget.ViewPager;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.SettingsActivity;
 import com.threethan.questpatcher.fragments.APKsFragment;
 import com.threethan.questpatcher.fragments.AboutFragment;

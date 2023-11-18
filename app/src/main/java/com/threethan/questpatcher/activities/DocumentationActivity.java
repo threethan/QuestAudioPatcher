@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.fragment.app.Fragment;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 
 /*
  * Created by APK Explorer & Editor <apkeditor@protonmail.com> on March 10, 2021

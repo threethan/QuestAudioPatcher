@@ -3,7 +3,7 @@ package com.threethan.questpatcher.utils.tasks;
 import android.app.Activity;
 import android.app.ProgressDialog;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.APKEditorUtils;
 import com.threethan.questpatcher.utils.AppSettings;
 

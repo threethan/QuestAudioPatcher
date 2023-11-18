@@ -14,7 +14,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.APKData;
 import com.threethan.questpatcher.utils.APKEditorUtils;
 import com.threethan.questpatcher.utils.Common;

@@ -6,7 +6,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.Common;
 
 import org.json.JSONException;

@@ -15,7 +15,7 @@ import androidx.documentfile.provider.DocumentFile;
 import androidx.viewpager.widget.ViewPager;
 
 import com.apk.axml.APKParser;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.fragments.APKDetailsFragment;
 import com.threethan.questpatcher.fragments.CertificateFragment;
 import com.threethan.questpatcher.fragments.ManifestFragment;

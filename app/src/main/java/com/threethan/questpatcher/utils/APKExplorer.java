@@ -19,7 +19,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.core.content.ContextCompat;
 
 import com.apk.axml.aXMLDecoder;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.dialogs.SigningOptionsDialog;
 import com.threethan.questpatcher.utils.tasks.ResignAPKs;
 

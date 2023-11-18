@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.apk.axml.APKParser;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.adapters.TextViewAdapter;
 import com.threethan.questpatcher.utils.APKExplorer;
 

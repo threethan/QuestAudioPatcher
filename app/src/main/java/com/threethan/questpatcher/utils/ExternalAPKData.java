@@ -9,7 +9,7 @@ import android.provider.OpenableColumns;
 import android.webkit.MimeTypeMap;
 
 import com.apk.axml.APKParser;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 
 import java.util.ArrayList;
 import java.util.List;

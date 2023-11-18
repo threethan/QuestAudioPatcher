@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.widget.AppCompatEditText;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 /*

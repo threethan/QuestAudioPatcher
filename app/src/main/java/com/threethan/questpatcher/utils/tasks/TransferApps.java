@@ -4,7 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Environment;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 
 import java.io.File;
 

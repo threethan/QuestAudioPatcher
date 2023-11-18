@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.apk.axml.APKParser;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.google.android.material.textview.MaterialTextView;
 
 import in.sunilpaulmathew.sCommon.PermissionUtils.sPermissionUtils;

@@ -2,7 +2,7 @@ package com.threethan.questpatcher.utils.dialogs;
 
 import android.app.Activity;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.SplitAPKInstaller;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 

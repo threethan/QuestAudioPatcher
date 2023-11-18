@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.view.WindowManager;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.APKData;
 import com.threethan.questpatcher.utils.Common;
 import com.threethan.questpatcher.utils.SplitAPKInstaller;

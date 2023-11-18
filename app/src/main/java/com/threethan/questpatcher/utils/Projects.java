@@ -6,7 +6,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.text.Editable;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.interfaces.EditTextInterface;
 import com.threethan.questpatcher.utils.tasks.ExportProject;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;

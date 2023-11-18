@@ -2,7 +2,7 @@ package com.threethan.questpatcher.utils.dialogs;
 
 import android.content.Context;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import in.sunilpaulmathew.sCommon.CommonUtils.sCommonUtils;

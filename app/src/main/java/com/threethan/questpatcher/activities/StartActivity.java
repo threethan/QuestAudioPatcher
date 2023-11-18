@@ -9,7 +9,7 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.threethan.questpatcher.MainActivity;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.AppData;
 import com.threethan.questpatcher.utils.Common;
 import com.google.android.material.card.MaterialCardView;

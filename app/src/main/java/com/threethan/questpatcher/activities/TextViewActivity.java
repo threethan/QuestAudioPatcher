@@ -13,7 +13,7 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.adapters.TextViewAdapter;
 import com.threethan.questpatcher.utils.APKExplorer;
 import com.threethan.questpatcher.utils.AppData;

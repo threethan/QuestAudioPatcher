@@ -9,7 +9,7 @@ import android.util.Base64;
 
 import androidx.documentfile.provider.DocumentFile;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.APKExploreActivity;
 import com.threethan.questpatcher.activities.APKTasksActivity;
 import com.threethan.questpatcher.utils.APKEditorUtils;

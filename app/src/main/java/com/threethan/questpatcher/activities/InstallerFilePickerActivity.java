@@ -19,7 +19,7 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.adapters.InstallerFilePickerAdapter;
 import com.threethan.questpatcher.utils.APKData;
 import com.threethan.questpatcher.utils.APKExplorer;

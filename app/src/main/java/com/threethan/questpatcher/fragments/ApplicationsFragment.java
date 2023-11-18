@@ -19,7 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.adapters.ApplicationsAdapter;
 import com.threethan.questpatcher.utils.AppData;
 import com.threethan.questpatcher.utils.Common;

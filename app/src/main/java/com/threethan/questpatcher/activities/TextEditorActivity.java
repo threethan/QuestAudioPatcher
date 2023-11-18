@@ -13,7 +13,7 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 
 import com.apk.axml.aXMLDecoder;
 import com.apk.axml.aXMLEncoder;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.fragments.APKExplorerFragment;
 import com.threethan.questpatcher.utils.APKExplorer;
 import com.threethan.questpatcher.utils.AppData;

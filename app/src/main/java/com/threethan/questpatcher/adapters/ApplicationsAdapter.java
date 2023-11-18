@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.ImageViewActivity;
 import com.threethan.questpatcher.utils.APKEditorUtils;
 import com.threethan.questpatcher.utils.Common;

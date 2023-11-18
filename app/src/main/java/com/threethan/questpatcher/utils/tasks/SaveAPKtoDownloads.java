@@ -6,7 +6,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.utils.APKData;
 
 import java.io.File;

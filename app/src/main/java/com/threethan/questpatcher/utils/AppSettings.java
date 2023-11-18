@@ -6,7 +6,7 @@ import android.os.Build;
 import android.os.Environment;
 
 import com.threethan.questpatcher.MainActivity;
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -3,7 +3,7 @@ package com.threethan.questpatcher.utils;
 import android.annotation.SuppressLint;
 import android.content.Context;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;

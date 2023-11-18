@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.APKTasksActivity;
 import com.threethan.questpatcher.utils.APKData;
 import com.threethan.questpatcher.utils.APKEditorUtils;

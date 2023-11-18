@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apk.editor.R;
+import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.adapters.SettingsAdapter;
 import com.threethan.questpatcher.utils.APKEditorUtils;
 import com.threethan.questpatcher.utils.AppSettings;
