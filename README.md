@@ -5,10 +5,11 @@ This application can patch Android Apps to add the neccessary permissions to pla
 Download and install the latest version from [Releases](https://github.com/threethan/QuestAudioPatcher/releases). This app may come to sidequest in the near future.
 
 ## Usage
-1. Select the app you wish to modify from the "Apps" list\n\n
-2. Wait for the app to be automatically be patched. This has a few steps and may take a while for larger apps.\n\n
-3. Uninstall the original app when prompted. WARNING: That app\'s current data may be permanently lost!\n\n
-4. If you are asked to let the patcher install unknown apps, go to settings and allow it. Then press back to return.\n\n
+0. Install the app you would like to patch onto your Quest
+1. Select the app you wish to modify from the "Apps" list
+2. Wait for the app to be automatically be patched. This has a few steps and may take a while for larger apps.
+3. Uninstall the original app when prompted. WARNING: That app\'s current data may be permanently lost!
+4. If you are asked to let the patcher install unknown apps, go to settings and allow it. Then press back to return.
 5. Install the modified application as prompted!
 
 Use common sense and only patch applications which would benefit from background audio.
