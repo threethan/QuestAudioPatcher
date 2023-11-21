@@ -18,12 +18,10 @@ Use common sense and only patch applications which would benefit from background
 **Many apps have issues running natively on the Quest. This patcher will not fix them.**
 #### Here are a few relevant apps I have tested:
 - **Spotify** - Cannot get past the login screen. Use the web app via [LightningLauncher](https://github.com/threethan/LightningLauncher/releases/) instead.
-- **Discord** - Many UI elements are incorrectly sized and chat gets cut off on the right side of the screen. Fully resolved by using an [pre-137 version of Discord](https://www.apkmirror.com/apk/discord-inc/discord-chat-for-gamers/discord-chat-for-gamers-126-21-stable-release/discord-talk-chat-hang-out-126-21-stable-android-apk-download/download/?key=524e8c97e18586f13183d87e42aaa18914bcbb38).
+- **Discord** - Many UI elements are incorrectly sized and chat gets cut off on the right side of the screen. Fully resolved by using [version 165.15](https://github.com/DevanWolf/DiscordForQuest/releases/download/v165.15-Quest-v1.1/DiscordForQuest.apk) or earlier.
 - **Tidal** - Works flawlessly, including lossless playback!
 
 *These issues are not specific to the patcher, and this is by no means a comprehensive list*
 
 ---
-
-
 *This project is heavily based on [Apk Explorer & Editor](https://github.com/apk-editor/APK-Explorer-Editor). Code from AEE is used under GPLv3.*
