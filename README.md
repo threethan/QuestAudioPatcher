@@ -20,6 +20,7 @@ Use common sense and only patch applications which would benefit from background
 - **Spotify** - Cannot get past the login screen. Use the web app via [LightningLauncher](https://github.com/threethan/LightningLauncher/releases/) instead.
 - **Discord** - Many UI elements are incorrectly sized and chat gets cut off on the right side of the screen. Fully resolved by using an [pre-137 version of Discord](https://www.apkmirror.com/apk/discord-inc/discord-chat-for-gamers/discord-chat-for-gamers-126-21-stable-release/discord-talk-chat-hang-out-126-21-stable-android-apk-download/download/?key=524e8c97e18586f13183d87e42aaa18914bcbb38).
 - **Tidal** - Works flawlessly, including lossless playback!
+- Any app with which attempts to detect modification will most likely not work. 
 
 *These issues are not specific to the patcher, and this is by no means a comprehensive list*
 
