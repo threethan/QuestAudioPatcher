@@ -69,9 +69,7 @@ public class ApplicationsAdapter extends RecyclerView.Adapter<ApplicationsAdapte
             } else {
                 holder.mAppName.setText(data.get(position).getAppName());
             }
-            holder.mVersion.setText(holder.mAppName.getContext().getString(R.string.version, data.get(position).getAppVersion()));
-            holder.mVersion.setTextColor(Color.RED);
-            holder.mSize.setTextColor(sThemeUtils.isDarkTheme(holder.mSize.getContext()) ? Color.GREEN : Color.BLACK);
+            holder.mVersion.setText(data.get(position).getAppVersion());
             holder.mCard.setCardBackgroundColor(sThemeUtils.isDarkTheme(holder.mCard.getContext()) ? Color.DKGRAY : Color.LTGRAY);
             holder.mCard.setStrokeColor(sThemeUtils.isDarkTheme(holder.mCard.getContext()) ? Color.DKGRAY : Color.LTGRAY);
             holder.mSize.setVisibility(View.VISIBLE);

@@ -64,7 +64,7 @@ public class InstallerFilePickerActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT < 29 && sPermissionUtils.isPermissionDenied(android.Manifest.permission.WRITE_EXTERNAL_STORAGE,this)) {
             LinearLayoutCompat mPermissionLayout = findViewById(R.id.permission_layout);
-            MaterialCardView mPermissionGrant = findViewById(R.id.grant_card);
+            View mPermissionGrant = findViewById(R.id.grant_card);
             mPermissionLayout.setVisibility(View.VISIBLE);
             mRecyclerView.setVisibility(View.GONE);
             mPermissionGrant.setOnClickListener(v -> sPermissionUtils.requestPermission(

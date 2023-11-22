@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -52,36 +52,19 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:focusable="false" />
-                        </androidx.appcompat.widget.LinearLayoutCompat>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/constraint_layout"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
 
                                 <com.google.android.material.textview.MaterialTextView
                                     android:id="@+id/version"
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintWidth_percent="0.7"
-                                    app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
-                                    app:layout_constraintEnd_toStartOf="@+id/size"
-                                    android:layout_gravity="start"
-                                    android:layout="@+id/size"
-                                    android:textStyle="bold"
-                                    android:maxLines="1" />
-
-                                <com.google.android.material.textview.MaterialTextView
-                                    android:id="@+id/size"
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintWidth_percent="0.3"
-                                    app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
-                                    app:layout_constraintStart_toEndOf="@+id/version"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
                                     android:layout_gravity="end"
-                                    android:gravity="end"
-                                    android:maxLines="1" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                    android:layout_marginTop="-20dp"
+                                    android:maxLines="1"
+                                    android:textStyle="bold"
+                                    app:layout_constraintWidth_percent="0.7" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
                 </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
 </com.google.android.material.card.MaterialCardView>

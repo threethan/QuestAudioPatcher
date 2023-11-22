@@ -33,7 +33,7 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        MaterialCardView mStartCard = findViewById(R.id.start_card);
+        View mStartCard = findViewById(R.id.start_card);
         MaterialTextView mText = findViewById(R.id.text);
         mProgress = findViewById(R.id.progress_bar);
 

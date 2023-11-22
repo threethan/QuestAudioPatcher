@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -49,11 +49,11 @@
                                     android:id="@+id/version"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginEnd="100dp"
                                     android:layout_gravity="start"
-                                    android:visibility="gone"
+                                    android:layout_marginEnd="100dp"
+                                    android:maxLines="1"
                                     android:textStyle="bold"
-                                    android:maxLines="1" />
+                                    android:visibility="gone" />
 
                                 <com.google.android.material.textview.MaterialTextView
                                     android:id="@+id/size"

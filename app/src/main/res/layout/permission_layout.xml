@@ -21,24 +21,11 @@
             android:textSize="17sp"
             android:padding="15dp" />
 
-        <com.google.android.material.card.MaterialCardView
+        <Button
             android:id="@+id/grant_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorBlack"
             android:layout_margin="15dp"
-            android:layout_gravity="end"
-            app:cardCornerRadius="15dp" >
+            android:text="@string/grant" />
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
-                    android:gravity="center"
-                    android:text="@string/grant"
-                    android:clickable="false"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:padding="10dp" />
-        </com.google.android.material.card.MaterialCardView>
 </androidx.appcompat.widget.LinearLayoutCompat>

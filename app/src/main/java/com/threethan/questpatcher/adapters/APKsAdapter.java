@@ -176,7 +176,6 @@ public class APKsAdapter extends RecyclerView.Adapter<APKsAdapter.ViewHolder> {
             holder.mCard.setCardBackgroundColor(sThemeUtils.isDarkTheme(holder.mCard.getContext()) ? Color.DKGRAY : Color.LTGRAY);
             holder.mCard.setStrokeColor(sThemeUtils.isDarkTheme(holder.mCard.getContext()) ? Color.DKGRAY : Color.LTGRAY);
             holder.mVersion.setVisibility(View.VISIBLE);
-            holder.mVersion.setTextColor(Color.RED);
         } catch (NullPointerException ignored) {
         }
         holder.mDelete.setOnClickListener(v -> new MaterialAlertDialogBuilder(v.getContext())

@@ -1,8 +1,9 @@
 <resources>
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="windowNoTitle">true</item>
-        <item name="colorSecondary">#E463E2</item>
-        <item name="colorAccent">#B969FF</item>
-        <item name="colorControlNormal">#875BEF</item>
+        <item name="colorSecondary">#CCCCCC</item>
+        <item name="colorAccent">#1c1e20</item>
+        <item name="colorControlNormal">#1c1e20</item>
+        <item name="colorPrimary">#000000</item>
     </style>
 </resources>
