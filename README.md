@@ -4,6 +4,12 @@ This application can patch Android Apps to add the neccessary permissions to pla
 ## Installation
 Download and install the latest version from [Releases](https://github.com/threethan/QuestAudioPatcher/releases). This app may come to sidequest in the near future.
 
+**Quest 1** - ❌ Patcher works, but system kills background apps
+
+**Quest 2** - ✔️ Tested working
+
+**Quest 3** - ❔ Needs testing
+
 ## Usage
 0. Install the app you would like to patch onto your Quest
 1. Select the app you wish to modify from the "Apps" list
