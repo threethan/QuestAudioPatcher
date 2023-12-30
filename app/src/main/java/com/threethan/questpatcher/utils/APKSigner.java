@@ -3,6 +3,8 @@ package com.threethan.questpatcher.utils;
 import android.content.Context;
 import android.os.Build;
 
+import androidx.annotation.RequiresApi;
+
 import com.android.apksig.ApkSigner;
 
 import java.io.ByteArrayInputStream;
@@ -11,6 +13,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
@@ -93,9 +96,15 @@ public class APKSigner {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             builder.setV4SigningEnabled(true);
         }
-//        builder.setMinSdkVersion(-1);
+        builder.setMinSdkVersion(-1);
         ApkSigner signer = builder.build();
         signer.sign();
     }
 
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static void copy(File origin, File dest) throws IOException {
+        Files.copy(origin.toPath(), dest.toPath());
+    }
 }

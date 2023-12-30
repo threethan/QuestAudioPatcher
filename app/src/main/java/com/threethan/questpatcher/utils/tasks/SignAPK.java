@@ -6,13 +6,14 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Build;
+import android.util.Log;
 
 import com.threethan.questpatcher.R;
 import com.threethan.questpatcher.activities.APKTasksActivity;
 import com.threethan.questpatcher.utils.APKData;
 import com.threethan.questpatcher.utils.APKEditorUtils;
 import com.threethan.questpatcher.utils.Common;
+import com.threethan.questpatcher.utils.InvalidZipException;
 import com.threethan.questpatcher.utils.SplitAPKInstaller;
 import com.threethan.questpatcher.utils.ZipAlign;
 
@@ -76,17 +77,19 @@ public class SignAPK extends sExecutor {
             return;
         }
         APKEditorUtils.zip(mBuildDir, mTMPZip);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            Common.setStatus(mActivity.getString(R.string.zip_aligning));
-            try {
-                RandomAccessFile apkUnaligned = new RandomAccessFile(mTMPZip, "r");
-                FileOutputStream apkAligned = new FileOutputStream(new File(mActivity.getCacheDir(), "tmp_zipAligned.apk"));
-                ZipAlign.alignZip(apkUnaligned, apkAligned);
-                mTMPZip = new File(mActivity.getCacheDir(), "tmp_zipAligned.apk");
-                sFileUtils.delete(new File(mActivity.getCacheDir(), "tmp.apk"));
-            } catch (IOException ignored) {
-            }
+
+        Common.setStatus(mActivity.getString(R.string.zip_aligning));
+        try {
+            RandomAccessFile apkUnaligned = new RandomAccessFile(mTMPZip, "r");
+            FileOutputStream apkAligned = new FileOutputStream(new File(mActivity.getCacheDir(), "tmp_zipAligned.apk"));
+            ZipAlign.alignZip(apkUnaligned, apkAligned);
+        } catch (IOException | InvalidZipException e) {
+            Log.e("ZAF","Zipalign FAILED:");
+            e.printStackTrace();
         }
+        mTMPZip = new File(mActivity.getCacheDir(), "tmp_zipAligned.apk");
+        sFileUtils.delete(new File(mActivity.getCacheDir(), "tmp.apk"));
+
         if (sPackageUtils.isPackageInstalled(Common.getAppID(), mActivity) && APKData.isAppBundle(sPackageUtils
                 .getSourceDir(Common.getAppID(), mActivity))) {
             mParent = new File(APKData.getExportAPKsPath(mActivity), Common.getAppID() + "_aee-signed");
@@ -113,9 +116,7 @@ public class SignAPK extends sExecutor {
             Common.setStatus(mActivity.getString(R.string.signing, mParent.getName()));
             APKData.signApks(mTMPZip, mParent, mActivity);
         }
-        if (Common.isCancelled()) {
-            sFileUtils.delete(mParent);
-        }
+
         installPackage(Common.getAppID(), mActivity);
     }
 

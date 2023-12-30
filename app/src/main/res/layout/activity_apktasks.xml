@@ -59,6 +59,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:clickable="false"
+                    android:gravity="center"
                     android:textStyle="italic"
                     android:visibility="gone" />
 
@@ -66,15 +67,16 @@
                     android:id="@+id/error"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
                     android:layout_gravity="end"
                     android:clickable="false"
+                    android:gravity="center"
                     android:textStyle="italic"
                     android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="20sp"
                     android:gravity="center"
                     android:text="@string/wait_help" />
