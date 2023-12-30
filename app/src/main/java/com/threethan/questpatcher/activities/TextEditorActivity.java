@@ -91,6 +91,7 @@ public class TextEditorActivity extends AppCompatActivity {
 
             @Override
             public void doInBackground() {
+                assert mPath != null;
                 if (APKExplorer.isBinaryXML(mPath)) {
                     try (FileInputStream inputStream = new FileInputStream(mPath)) {
                         text = new aXMLDecoder().decode(inputStream).trim();
@@ -121,6 +122,7 @@ public class TextEditorActivity extends AppCompatActivity {
                     mTextContents = text;
                 }
                 if (invalid) {
+                    assert mPath != null;
                     sCommonUtils.toast(getString(R.string.xml_decode_failed, new File(mPath).getName()), TextEditorActivity.this).show();
                 }
                 mProgressLayout.setVisibility(View.GONE);
@@ -142,6 +144,7 @@ public class TextEditorActivity extends AppCompatActivity {
 
                 @Override
                 public void doInBackground() {
+                    assert mPath != null;
                     if (APKExplorer.isBinaryXML(mPath)) {
                         if (isXMLValid(text)) {
                             try (FileOutputStream fos = new FileOutputStream(mPath)) {
@@ -190,6 +193,7 @@ public class TextEditorActivity extends AppCompatActivity {
         }
     }
 
+    /** @noinspection deprecation*/
     @Override
     public void onBackPressed() {
         if (mTextContents != null && mText.getText() != null && !mTextContents.equals(mText.getText().toString())) {

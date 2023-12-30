@@ -2,13 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
 
-    compileSdkVersion 33
-    buildToolsVersion '33.0.0'
     namespace 'com.threethan.questpatcher'
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 10
         versionName "Release 1.0"
         vectorDrawables.useSupportLibrary = true
@@ -40,10 +39,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.tools.build:apksig:8.1.3'
+    implementation 'com.android.tools.build:apksig:8.1.4'
     implementation 'com.github.apk-editor:aXML:743632cf62'
     implementation 'com.github.sunilpaulmathew:CrashReporter:4f24aa11c2'
 
+    //https://github.com/sunilpaulmathew/sCommon/commits/master/
     def sCommon_Version = '8c5666a002'
     implementation "com.github.sunilpaulmathew.sCommon:apkutils:${sCommon_Version}"
     implementation "com.github.sunilpaulmathew.sCommon:adapters:${sCommon_Version}"
@@ -55,7 +55,7 @@ dependencies {
     implementation "com.github.sunilpaulmathew.sCommon:themeutils:${sCommon_Version}"
     implementation "com.github.sunilpaulmathew.sCommon:translatorutils:${sCommon_Version}"
 
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.11.0'
     implementation 'net.lingala.zip4j:zip4j:2.11.5'
     implementation 'org.smali:baksmali:2.5.2'
     implementation 'org.smali:smali:2.5.2'

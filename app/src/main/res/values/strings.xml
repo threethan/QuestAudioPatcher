@@ -4,9 +4,9 @@
     <string name="all">All</string>
     <string name="android_version">Android %s</string>
     <string name="apk_corrupted">APK file(s) is corrupted. Aborting…</string>
-    <string name="apk_installer">AEE APK Installer</string>
+    <string name="apk_installer">APK Installer</string>
     <string name="apks">APKs</string>
-    <string name="app_name_short" translatable="false">AEE</string>
+    <string name="app_name_short" translatable="false">QAP</string>
     <string name="apps">Apps</string>
     <string name="apps_exported">Exported Modified APKs</string>
     <string name="apps_installed">Installed Apps</string>

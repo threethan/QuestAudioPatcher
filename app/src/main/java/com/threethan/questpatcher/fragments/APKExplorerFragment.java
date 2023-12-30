@@ -59,9 +59,9 @@ public class APKExplorerFragment extends androidx.fragment.app.Fragment {
     private AppCompatImageButton saveBtn;
     public static APKExplorerFragment current;
     public void fail() {
-        AlertDialog alertDialog =  new MaterialAlertDialogBuilder(getActivity())
+        AlertDialog alertDialog =  new MaterialAlertDialogBuilder(requireActivity())
                 .setNegativeButton(R.string.cancel, (DialogInterface.OnClickListener) (d, w) -> {
-                    getActivity().finish();
+                    requireActivity().finish();
                     d.dismiss();
                 }).create();
         alertDialog.setTitle(R.string.cancelling);
@@ -69,9 +69,9 @@ public class APKExplorerFragment extends androidx.fragment.app.Fragment {
         alertDialog.show();
     }
     public void failManifest() {
-        AlertDialog alertDialog =  new MaterialAlertDialogBuilder(getActivity())
+        AlertDialog alertDialog =  new MaterialAlertDialogBuilder(requireActivity())
                 .setNegativeButton(R.string.cancel, (DialogInterface.OnClickListener) (d, w) -> {
-                    getActivity().finish();
+                    requireActivity().finish();
                     d.dismiss();
                 }).create();
         alertDialog.setTitle(R.string.cancelling);
@@ -94,19 +94,15 @@ public class APKExplorerFragment extends androidx.fragment.app.Fragment {
 
         AppCompatImageButton mSortButton = mRootView.findViewById(R.id.sort);
         mTitle = mRootView.findViewById(R.id.title);
-        MaterialTextView mError = mRootView.findViewById(R.id.error_status);
         mProgressLayout = mRootView.findViewById(R.id.progress_layout);
         mRecyclerView = mRootView.findViewById(R.id.recycler_view);
 
-        String mAppName = APKExplorer.getAppName(Common.getPath() + "/.aeeBackup/appData");
         Common.setAppID(new File(Common.getPath()).getName());
         mTitle.setText(getString(R.string.root));
 
         mBack.setOnClickListener(v -> retainDialog());
 
-        mSave.setOnClickListener(v -> {
-            new SignAPK(requireActivity()).execute();
-        });
+        mSave.setOnClickListener(v -> new SignAPK(requireActivity()).execute());
 
         if (APKEditorUtils.isFullVersion(requireActivity())) {
             mSave.setVisibility(View.VISIBLE);
@@ -127,6 +123,7 @@ public class APKExplorerFragment extends androidx.fragment.app.Fragment {
                 break;
             }
         }
+//        succeed();
         if (!hasOpened) failManifest();
 
         mSortButton.setOnClickListener(v -> {

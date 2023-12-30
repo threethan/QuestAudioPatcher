@@ -17,7 +17,7 @@
     </string>
     <string name="already_patched">This package has already been patched or already has required permissions!</string>
     <string name="no_manifest">Failed to find AndroidManifest.xml, try clearing app data</string>
-    <string name="in_progress">Modifying files…</string>
+    <string name="in_progress">Modifying Permissions in AndroidManifest.xml…</string>
 
     <string name="install_help">If you failed to install now, you can cancel and try again from the APKs tab</string>
     <string name="wait_help">This process might take a while, especially on more complex applications.</string>
