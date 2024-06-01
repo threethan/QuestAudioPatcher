@@ -9,9 +9,9 @@ Download and install the latest version from [Releases](https://github.com/three
 
 **Quest 1** - ❌ Patcher works, but system kills background apps
 
-**Quest 2** - ✔️ Tested working
+**Quest 2** - ✔️ Tested working, though there may be some issues
 
-**Quest 3** - ❔ Needs testing
+**Quest 3** - ❔ Should work, but it's better to just enable "Background Audio Playback" in experimental features
 
 ## Usage
 0. Install the app you would like to patch onto your Quest
