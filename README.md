@@ -1,3 +1,7 @@
+> [!WARNING]
+> This application has long been discontinued and will not receive updates in the forseeable future.
+> Patching with this method is no longer neccessary, as Meta now allows background playback on both Quest 2 and 3 by default.
+
 # Quest Audio Patcher
 This application can patch Android Apps to add the neccessary permissions to play audio in the background on Oculus Quest Devices.
 
